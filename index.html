@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoltEdge Energy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <h1 class="logo">⚡ VoltEdge</h1>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="mobileMenu">
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#gallery" onclick="closeMenu()">Gallery</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h2>Power That Never Fails</h2>
+    <p>Advanced generator systems, maintenance & rapid response solutions.</p>
+    <button onclick="scrollToSection('contact')">Get Quote</button>
+  </div>
+  <canvas id="energyCanvas"></canvas>
+</section>
+
+<section id="services" class="services">
+  <h2>Services</h2>
+
+  <div class="grid services-grid">
+
+    <div class="service-card">
+      <img src="images/service-sales.jpg">
+      <div class="service-content">
+        <h3>Generator Sales</h3>
+        <p>High-performance generators for residential, commercial & industrial use.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service-repair.jpg">
+      <div class="service-content">
+        <h3>Repairs & Maintenance</h3>
+        <p>Expert diagnostics, servicing and preventative maintenance programs.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service-sla.jpg">
+      <div class="service-content">
+        <h3>SLA Contracts</h3>
+        <p>Reliable long-term service agreements ensuring uninterrupted power.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service-callout.jpg">
+      <div class="service-content">
+        <h3>Emergency Callouts</h3>
+        <p>Rapid response teams available 24/7 for urgent generator failures.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="images/service-refurb.jpg">
+      <div class="service-content">
+        <h3>Refurbished Units</h3>
+        <p>Cost-effective, fully restored generators with performance guarantees.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="about dark">
+  <h2>About VoltEdge</h2>
+  <p>
+    We deliver reliable power solutions through cutting-edge engineering, fast response times,
+    and long-term service partnerships.
+  </p>
+</section>
+
+
+
+
+
+<section id="gallery" class="gallery">
+  <h2>Projects</h2>
+
+  <div class="gallery-controls">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('install')">Installations</button>
+    <button onclick="filterGallery('repair')">Repairs</button>
+  </div>
+
+  <div class="gallery-grid">
+    <img src="images/gen1.jpg" class="gallery-item install">
+    <img src="images/gen2.jpg" class="gallery-item repair">
+    <img src="images/gen3.jpg" class="gallery-item product">
+    <img src="images/gen4.jpg" class="gallery-item product">
+    <img src="images/gen5.jpg" class="gallery-item install">
+  </div>
+</section>
+
+<section id="contact" class="contact dark">
+  <h2>Get In Touch</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Project details"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
